@@ -1,0 +1,64 @@
+.bloc {
+    margin: auto;
+    background-color: antiquewhite;
+    /* background-color: aliceblue; */
+
+}
+
+.couleur {
+    background-color: white;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:active {
+    color: midnightblue;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+h1 {
+    margin: 0;
+    padding: 0.67em;
+}
+
+.entete {
+    background-color: white;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.enjolivure {
+    width: 500px;
+}
+
+.contenu {
+    background-color: white;
+    max-width: 1000px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.basdepage {
+    text-align: center;
+    display: block;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .contenu {
+        width: 100%;
+    }
+
+    .enjolivure {
+        width: 100%;
+    }
+
+}
