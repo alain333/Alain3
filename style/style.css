@@ -1,6 +1,7 @@
 .bloc {
     margin: auto;
     background-color: antiquewhite;
+    background-color: white;
     /* background-color: aliceblue; */
 
 }
@@ -10,6 +11,11 @@
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+}
+
+a { 
+    color: #36c;
+    text-decoration: none;
 }
 
 a:active {
@@ -35,11 +41,12 @@ h1 {
 
 .enjolivure {
     width: 500px;
+    height: min-content;
 }
 
 .contenu {
     background-color: white;
-    max-width: 1000px;
+    max-width: 800px;
     margin-top: 0%;
     margin-bottom: 0%;
     margin-left: auto;
@@ -47,6 +54,7 @@ h1 {
 }
 
 .basdepage {
+    margin-top: 0.83em;
     text-align: center;
     display: block;
 
@@ -60,5 +68,13 @@ h1 {
     .enjolivure {
         width: 100%;
     }
-
 }
+    
+.bloc { font-size: 1rem;
+}
+
+.title {
+   font-size: 3rem; 
+   padding: 10px;
+}
+

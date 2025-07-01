@@ -12,14 +12,13 @@
     border-top: none;
     padding: 4px;
     font-family: arial, helvetica, sans-serif;
-    font-size: 10pt;
     font-family: 'Lucida Console', sans-serif;
 }
 
 .bloc {
     margin: auto;
     background-color: antiquewhite;
-    background-color: aliceblue;
+    background-color: white;
 
 }
 
@@ -28,6 +27,11 @@
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+}
+
+a { 
+    color: #36c;
+    text-decoration: none;
 }
 
 a:active {
@@ -75,7 +79,7 @@ h1 {
 .contenu {
     padding-bottom: 64px;
     background-color: white;
-    max-width: 1000px;
+    max-width: 794.667px;
     margin-top: 0%;
     margin-bottom: 0%;
     margin-left: auto;
@@ -83,7 +87,7 @@ h1 {
 }
 
 .profile {
-    padding-right: 16px;
+    padding: 16px;
 }
 
 .description {
@@ -95,7 +99,6 @@ h1 {
     text-align: center;
     display: block;
 }
-
 
 @media screen and (max-width: 1000px) {
     .box {
@@ -112,3 +115,11 @@ h1 {
     }
 
 }
+
+html { font-size: 1em;
+}
+
+.title {
+    font-size: 3em; 
+    padding: 10px;
+ }
