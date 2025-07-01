@@ -3,6 +3,7 @@
     justify-content: center;
     margin-left: 64px;
     margin-right: 64px;
+    margin-top: 0.83em;
     background-color:
         /*#D6DAF0*/
         aliceblue
@@ -13,7 +14,6 @@
     padding: 4px;
     font-family: arial, helvetica, sans-serif;
     font-size: 1rem;
-    /*font-family: 'Lucida Console', sans-serif;*/
 }
 
 .bloc {
