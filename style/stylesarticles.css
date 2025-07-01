@@ -16,6 +16,23 @@
     font-size: 1rem;
 }
 
+.commentaires {
+    justify-content: center;
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 0.83em;
+    background-color:
+        /*#D6DAF0*/
+        aliceblue
+        ;
+    border: 1px solid #B7C5D9;
+    border-left: none;
+    border-top: none;
+    padding: 4px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1rem;
+}
+
 .bloc {
     margin: auto;
     background-color: antiquewhite;
