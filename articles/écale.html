@@ -26,14 +26,64 @@
             </div>
             <div class="description">
                 <p>
-                    Écale de l'office de ce matin, accompagnée d'un aide-mémoire pour une mouche qui la préside. Stèles, conservation d'Heures, messe.
+                    Écale de l'office de ce matin, accompagnée d'un aide-mémoire pour une avette qui la règle. Stèles, enregistrement d'Heures et messe.
                 </p>
-                <img src="../img/aide-mémoire.png" width="88px" class="open-popup-btn"
+<!-- Miniature ou bouton -->
+<img src="../img/miniaécale.jpg" width="88px" height="66px" class="open-popup-btn"
+     onclick="openVideoPopup('../video/2.mp4')">
+
+<!-- Conteneur popup -->
+<div id="videoPopup" class="popup" onclick="closeVideoPopup()">
+    <video id="popupVideo" controls autoplay>
+        <source src="" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+    </video>
+</div>
+
+<!-- Script -->
+<script>
+    function openVideoPopup(videoSrc) {
+        const video = document.getElementById('popupVideo');
+        video.querySelector('source').src = videoSrc;
+        video.load();
+        document.getElementById('videoPopup').style.display = 'flex';
+    }
+
+    function closeVideoPopup() {
+        const popup = document.getElementById('videoPopup');
+        const video = document.getElementById('popupVideo');
+        video.pause();
+        video.currentTime = 0;
+        popup.style.display = 'none';
+    }
+</script>
+
+<style>
+.popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup video {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+</style>
+</script>
+
+<img src="../img/aide-mémoire.png" width="88px" height="66px" class="open-popup-btn"
                     onclick="openPopup('../img/aide-mémoire.png')">
                 <div id="popup" class="popup" onclick="closePopup()">
                     <img id="popupImage" src="" alt="">
                 </div>
-
                 <script>
                     // Fonction pour ouvrir le popup
                     function openPopup(image) {
@@ -45,9 +95,10 @@
                         document.getElementById('popup').style.display = 'none';
                     }
                 </script>
-                <iframe src="https://youtu.be/bfW8gvfMSvg?si=IZxeBjk4MRzq7wh6" frameborder="0"></iframe>
+
                 <p class="auteur">Alain :3</p>
         </div>
+        <!-- 
         </div>
     <div class="commentaires">
             <div id="cusdis_thread"
@@ -60,7 +111,7 @@
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
 
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>-->
 
     </main>
     <footer class="basdepage">
